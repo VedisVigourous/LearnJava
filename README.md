@@ -10,5 +10,6 @@ Just explore the `src` folder to access the code, or click here:
 
 If you have any queries, feel free to reach out:
 
-- 📧 Email: [codegrounds666@gmail.com](mailto:codegrounds666@gmail.com)  
+- 📧 Email: [codegrounds666@gmail.com](mailto:codegrounds666@gmail.com)
+- 📸 Instagram: [@vedant_chauhaan](https://www.instagram.com/vedant_chauhaan)
 
