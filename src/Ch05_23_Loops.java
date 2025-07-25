@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ch5_23_Loops {
+public class Ch05_23_Loops {
     public static void main(String[] args) {
 
         // Loops are used to perform set of actions repeatedly

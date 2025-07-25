@@ -1,4 +1,4 @@
-public class Ch6_29_MultidimensionalArrays {
+public class Ch06_29_MultidimensionalArrays {
     public static void main(String[] args) {
         System.out.println(" ");
 

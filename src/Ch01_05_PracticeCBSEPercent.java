@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ch1_05_PracticeCBSEPercent {
+public class Ch01_05_PracticeCBSEPercent {
     public static void main(String[] args) {
         Scanner n1 = new Scanner(System.in);
         System.out.println("Welcome to CBSE Percentage Calculator");

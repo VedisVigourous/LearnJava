@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ch7_33_VariableArguments {
+public class Ch07_33_VariableArguments {
     static int sum(int a , int b){
         return a+b;
     }

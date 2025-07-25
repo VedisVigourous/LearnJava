@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ch4_18_RelLogicOperators {
+public class Ch04_18_RelLogicOperators {
     public static void main(String[] args) {
 
         //Logical Operators: 1. && - AND , || - OR  and ! - NOT

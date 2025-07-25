@@ -1,4 +1,4 @@
-public class Ch2_07_Operators {
+public class Ch02_07_Operators {
     public static void main(String[] args) {
 
         // Different Type of operators:

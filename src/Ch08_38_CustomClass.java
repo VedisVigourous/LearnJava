@@ -22,7 +22,7 @@ class Student{      //Note: Public is not added because a code can have only one
         return fees_due;
     }
 }
-public class Ch8_38_CustomClass {
+public class Ch08_38_CustomClass {
     public static void main(String[] args) {
         System.out.println(" "); // Main Attribute 1
         System.out.println("Below mentioned is Student's Detail:"); // Main Attribute 2

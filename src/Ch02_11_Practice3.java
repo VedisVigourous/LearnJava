@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ch2_11_Practice3 {
+public class Ch02_11_Practice3 {
     public static void main(String[] args) {
 
         //Tricky Question:

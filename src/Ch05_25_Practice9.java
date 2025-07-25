@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ch5_25_Practice9 {
+public class Ch05_25_Practice9 {
     public static void main(String[] args) {
         //Star pattern
         System.out.println("Star pattern: ");

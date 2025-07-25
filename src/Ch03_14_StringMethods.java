@@ -1,4 +1,4 @@
-public class Ch3_14_StringMethods {
+public class Ch03_14_StringMethods {
     public static void main(String[] args) {
         String name = "Vedant";
         // Index:      012345

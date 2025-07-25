@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ch4_21_Practice8 {
+public class Ch04_21_Practice8 {
     public static void main(String[] args) {
         //Operator Precedence Question
         int A = 10 + 5 * 2 - 15 / 3;

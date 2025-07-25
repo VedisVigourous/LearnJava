@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ch4_19_SwitchCase {
+public class Ch04_19_SwitchCase {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

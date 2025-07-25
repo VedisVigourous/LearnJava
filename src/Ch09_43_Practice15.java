@@ -31,7 +31,7 @@ class cylinder{
         return Math.PI*radius*radius*height;
     }
 }
-public class Ch9_43_Practice15 {
+public class Ch09_43_Practice15 {
     public static void main(String[] args) {
         System.out.println();
 

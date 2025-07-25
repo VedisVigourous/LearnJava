@@ -1,4 +1,4 @@
-public class Ch6_27_Arrays {
+public class Ch06_27_Arrays {
     public static void main(String[] args) {
         System.out.println(" ");
 

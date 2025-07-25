@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ch3_13_Strings {
+public class Ch03_13_Strings {
     public static void main(String[] args) {
         //Strings are sequence of characters
         //Strings are case sensitive

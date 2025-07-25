@@ -1,5 +1,5 @@
 //BODMAS isn't followed
-public class Ch2_08_PrecedenceOp {
+public class Ch02_08_PrecedenceOp {
     public static void main(String[] args) {
         //Precedence refers to the order of Operations to be carries out
         //Precedence of (+,-) < (*,/)

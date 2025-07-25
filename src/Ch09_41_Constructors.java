@@ -25,7 +25,7 @@ class studentClass{
         return roll_no;
     }
 }
-public class Ch9_41_Constructors {
+public class Ch09_41_Constructors {
     public static void main(String[] args) {
         System.out.println();
         // Constructors helps in initialising an object while it is created.

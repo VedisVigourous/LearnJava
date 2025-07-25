@@ -3,7 +3,7 @@
 
 import java.util.Scanner;     //This is the Scanner Class import statement
 
-public class Ch1_03_UserInput {
+public class Ch01_03_UserInput {
     public static void main(String[] args) {       //Shortcut to add the main line is main
         System.out.println("Shortcut is Sout");        //Shortcut to add System out line is sout
         Scanner input = new Scanner(System.in);         //Scanner statement required to initiate user input process

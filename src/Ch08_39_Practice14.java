@@ -59,7 +59,7 @@ class GTACharacter{
         }
     }
 }
-public class Ch8_39_Practice14 {
+public class Ch08_39_Practice14 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

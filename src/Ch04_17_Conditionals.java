@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ch4_17_Conditionals {
+public class Ch04_17_Conditionals {
     public static void main(String[] args) {
         //Conditions are used to enter decisions making in program
 

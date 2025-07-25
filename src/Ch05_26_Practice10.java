@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ch5_26_Practice10 {
+public class Ch05_26_Practice10 {
     public static void main(String[] args) {
         //Looping output
         System.out.print("Looping output: ");

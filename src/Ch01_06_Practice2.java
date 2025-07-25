@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ch1_06_Practice2 {
+public class Ch01_06_Practice2 {
     public static void main(String[] args) {
 
     //Kilometers to Miles

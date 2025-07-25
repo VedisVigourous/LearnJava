@@ -1,4 +1,4 @@
-public class Ch1_02_JavaLiterals {
+public class Ch01_02_JavaLiterals {
     public static void main(String[] args) {
     boolean ans = true; //Only true/false accepted not True/False
     char Ans = 'Y'; //Character always in Single Quotes

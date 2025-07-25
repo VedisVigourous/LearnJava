@@ -1,4 +1,4 @@
-public class Ch7_32_MethodsOverloading {
+public class Ch07_32_MethodsOverloading {
     static void whatismysisname(){ //1st method
         System.out.println("My sister's name is Pihu!");
     }
@@ -40,7 +40,7 @@ public class Ch7_32_MethodsOverloading {
         System.out.println(" ");
 
         // Object making
-        Ch7_32_MethodsOverloading obj = new Ch7_32_MethodsOverloading();
+        Ch07_32_MethodsOverloading obj = new Ch07_32_MethodsOverloading();
         int c;
         c = obj.add(1,2);
         System.out.println("The sum of a and b is: " + c);

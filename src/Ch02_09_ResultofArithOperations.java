@@ -1,4 +1,4 @@
-public class Ch2_09_ResultofArithOperations {
+public class Ch02_09_ResultofArithOperations {
     public static void main(String[] args) {
         //Results have some set of rules if not assigned a type
         //Theory:

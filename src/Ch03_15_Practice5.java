@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ch3_15_Practice5 {
+public class Ch03_15_Practice5 {
     public static void main(String[] args) {
         //Convert String to lower case
         Scanner inpt = new Scanner(System.in);

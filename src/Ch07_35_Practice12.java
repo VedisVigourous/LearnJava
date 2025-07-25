@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ch7_35_Practice12 {
+public class Ch07_35_Practice12 {
     static void table(int a){
         System.out.println("The table of " + a + " is:");
         for (int i = 1; i<=10; i++){
@@ -75,7 +75,7 @@ public class Ch7_35_Practice12 {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter the number to print it's Table: ");
         int tab = input.nextInt();
-        Ch7_35_Practice12.table(tab);
+        Ch07_35_Practice12.table(tab);
 
         System.out.println(" ");
 

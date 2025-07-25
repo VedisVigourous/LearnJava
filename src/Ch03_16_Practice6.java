@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ch3_16_Practice6 {
+public class Ch03_16_Practice6 {
     public static void main(String[] args) {
         //Name Formatter
         Scanner input = new Scanner(System.in);

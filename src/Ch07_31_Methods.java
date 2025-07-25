@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ch7_31_Methods {
+public class Ch07_31_Methods {
     //Method making
     int logic(int x , int y){
         int z=0;
@@ -44,7 +44,7 @@ public class Ch7_31_Methods {
            var = method_name(parameters to be used) ** Calling of an object */
 
 
-        Ch7_31_Methods obj = new Ch7_31_Methods();
+        Ch07_31_Methods obj = new Ch07_31_Methods();
         c = obj.logic(a,b);
 
         System.out.println(" ");

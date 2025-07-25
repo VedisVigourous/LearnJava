@@ -1,4 +1,4 @@
-public class Ch2_12_Practice4 {
+public class Ch02_12_Practice4 {
     public static void main(String[] args) {
         //Precedence Challenge:
         int x = 5;

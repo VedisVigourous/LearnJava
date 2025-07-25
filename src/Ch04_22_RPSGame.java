@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.Random;
-public class Ch4_22_RPSGame {
+public class Ch04_22_RPSGame {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         Random pcinput = new Random();

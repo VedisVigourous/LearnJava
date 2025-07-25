@@ -45,7 +45,7 @@ class guessGame{
         return noGuesses;
     }
 }
-public class Ch9_42_GuessTheNumber {
+public class Ch09_42_GuessTheNumber {
     public static void main(String[] args) {
 
 

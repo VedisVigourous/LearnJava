@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ch6_28_Array_Operations {
+public class Ch06_28_Array_Operations {
     public static void main(String[] args) {
         System.out.println(" ");
         // Note array can be typecast into different data type (Even strings can be taken into accnt)

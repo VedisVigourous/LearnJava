@@ -57,7 +57,7 @@ class CircleProps{
     }
 }
 
-public class Ch9_40_AccessModifiers {
+public class Ch09_40_AccessModifiers {
     public static void main(String[] args) {
         System.out.println();
 

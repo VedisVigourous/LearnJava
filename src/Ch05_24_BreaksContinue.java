@@ -1,4 +1,4 @@
-public class Ch5_24_BreaksContinue {
+public class Ch05_24_BreaksContinue {
     public static void main(String[] args) {
         // Breaks and continue in loops
         // Using in an infinite loop

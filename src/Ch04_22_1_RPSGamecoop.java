@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ch4_22_1_RPSGamecoop {
+public class Ch04_22_1_RPSGamecoop {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Rules for Rock , Paper and Scissors:");

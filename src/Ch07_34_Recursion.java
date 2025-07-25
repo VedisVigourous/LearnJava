@@ -1,4 +1,4 @@
-public class Ch7_34_Recursion {
+public class Ch07_34_Recursion {
 
     // Factorial of  n = n * factorial(n-1)
     static int factorial(int n){

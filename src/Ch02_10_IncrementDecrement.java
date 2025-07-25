@@ -1,4 +1,4 @@
-public class Ch2_10_IncrementDecrement {
+public class Ch02_10_IncrementDecrement {
     public static void main(String[] args) {
         int i = 50;     //++ is used to increment the value
         System.out.println(i++);  //(command prints i then increment) i.e. prints:50 + 1

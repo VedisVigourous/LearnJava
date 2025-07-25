@@ -1,6 +1,6 @@
 import java.lang.classfile.instruction.SwitchCase;
 import java.util.Scanner;
-public class Ch4_20_Practice7 {
+public class Ch04_20_Practice7 {
     public static void main(String[] args) {
 
         // Output finder

@@ -1,4 +1,4 @@
-public class Ch7_36_Practice13 {
+public class Ch07_36_Practice13 {
     static void greet(String name){
         System.out.printf("Hello %s!" , name);
     }

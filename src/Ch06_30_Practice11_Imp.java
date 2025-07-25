@@ -1,4 +1,4 @@
-public class Ch6_30_Practice11_Imp {
+public class Ch06_30_Practice11_Imp {
     public static void main(String[] args) {
         System.out.println(" ");
 
