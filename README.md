@@ -1,7 +1,7 @@
 ## Welcome to LearnJava 👋
 
 Hello there! I'm your vigorous friend, here to make Java float on your fingertips.  
-Just explore the `src` folder to access the code, or click here:  
+Just explore the `src` folder to access the code which includes handtyped code within them, or click here:  
 🔗 [`Source Code`](https://github.com/VedisVigourous/LearnJava/tree/master/src)
 
 ---
