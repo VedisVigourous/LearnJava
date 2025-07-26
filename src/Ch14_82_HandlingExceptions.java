@@ -40,3 +40,7 @@ public class Ch14_82_HandlingExceptions {
         // Note: If try-catch was not present - the code would have exited after encountering an Exception and "Operation Ended" would have not been printed.
     }
 }
+
+/* In a nutshell:
+   1. try-catch executes a program even though exceptions are likely to occur
+   2. it exits out the try-catch block without exitting the whole program that is any code written outside it will still be executed */
