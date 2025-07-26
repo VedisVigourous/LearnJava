@@ -67,7 +67,7 @@ public class Ch14_81_ErrorsinJava {
             System.exit(404);
         }
         System.out.println("Dividing 100 by " + num + " : " + 100/num + " \nWith Remainder: " + 100%num);
-        // But dividing by 0 gives a runtime error. Can be solved by putting an if statement.
+        // But dividing by 0 gives a runtime error. Can be solved by putting an if statement and more solutions will be discussed in later classes.
 
         // And much more errors and exceptions exists which we will study further.
     }

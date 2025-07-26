@@ -34,7 +34,7 @@ class guessGame{
             System.out.println();
             System.out.println("Congratzz !!! You achieved it !!!");
             getNoGuesses();
-            System.out.println("Computers Number was: " + getCompGuess());
+            System.out.println("Computer's Number was: " + getCompGuess());
             System.out.println();
             System.out.println("|| Made by Vedant ||");
             System.out.println("|| Java - 2025 ||");
@@ -50,14 +50,14 @@ public class Ch09_42_GuessTheNumber {
 
 
         System.out.println();
-        System.out.println("\t\t\t\t\t\t\t  ******");
+        System.out.println("                              ******");
         System.out.println();
-        System.out.println("\t\t\t\t\t\t ! Game Rules !");
-        System.out.println("\t\t\t| Computer will Guess A Number up-till 100 |");
-        System.out.println("\t\t\t\t  | You will have to guess it |");
-        System.out.println("\t\t| Lower the number of Guesses Better is The Score |");
+        System.out.println("                         ! Game Rules !");
+        System.out.println("            | Computer will Guess A Number up-till 100 |");
+        System.out.println("                   | You will have to guess it |");
+        System.out.println("        | Lower the number of Guesses Better is The Score |");
         System.out.println();
-        System.out.println("\t\t\t\t\t\t\t  ******");
+        System.out.println("                             ******");
         System.out.println();
 
         guessGame userinp = new guessGame();

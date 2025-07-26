@@ -13,7 +13,7 @@ public class Ch02_09_ResultofArithOperations {
 
         //Example:
         float a = 3.598f;
-        double b = 8.47; // By default double
+        double b = 8.47; // By default, double
         System.out.println(a + b); //Will be double
     }
 }
