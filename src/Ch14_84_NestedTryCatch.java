@@ -59,7 +59,7 @@ public class Ch14_84_NestedTryCatch {
         // ***************************************************************** //
 
         // Quick quiz - Write a program to access array again and again unti ArrayOutofBoundIndex Exception occurs
-        // Solution:
+        // Solution: Using a while loop to access a block of code again and again
 
         System.out.println();
         System.out.println();
