@@ -1,5 +1,4 @@
 class CustomException extends Exception{
-
     @Override
     public String toString() {
         return "toString() , Caught an Exception";
