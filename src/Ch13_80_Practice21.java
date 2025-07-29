@@ -61,7 +61,7 @@ class PrimeNumberFinderThread extends Thread {
     }
 }
 
-    public class Ch13_80_Practice7 {
+    public class Ch13_80_Practice21 {
         public static void main(String[] args) {
             System.out.println();
 

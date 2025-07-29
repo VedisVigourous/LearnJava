@@ -1,4 +1,4 @@
-public class Ch11_61_Practice4 {
+public class Ch11_61_Practice19 {
     
     interface Connectable {
         void connectToWifi(String wifiName);

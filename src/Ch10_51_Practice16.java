@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ch10_51_Practice1 {
+public class Ch10_51_Practice16 {
 	
 	static class Circle{
 		Scanner input = new Scanner(System.in);

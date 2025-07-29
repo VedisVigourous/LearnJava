@@ -38,7 +38,7 @@ class Priority extends Thread{
     }
 }
 
-public class Ch13_78_Practice6 {
+public class Ch13_78_Practice20 {
     public static void main(String[] args) {
 
         // Q1. Program to print "Good Morning" and "Welcome" continuously via Threads (bounding to 5)

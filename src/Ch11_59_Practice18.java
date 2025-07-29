@@ -1,5 +1,5 @@
 
-public class Ch11_59_Practice3 {
+public class Ch11_59_Practice18 {
     
     abstract static class Pen{
         abstract void write(); // All methods of an abstract class are also abstract

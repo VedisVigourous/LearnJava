@@ -1,4 +1,4 @@
-public class Ch10_52_Practice2 {
+public class Ch10_52_Practice17 {
     
     static class Person{
         private String name;
