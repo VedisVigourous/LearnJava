@@ -92,4 +92,5 @@ public class Ch14_87_FinallyBlock {
 /* In a nutshell
    1. finally block is used to execute important set of commands which is executed even if any mishappenings happens when executing the code.
    2. It is used to do some important task , like clearing up of system resource on exitting a program etc.
+   3. Also note , with try{} you can either use catch{} or final{} but one of each is compulsory.
  */
