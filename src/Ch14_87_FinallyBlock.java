@@ -86,6 +86,8 @@ public class Ch14_87_FinallyBlock {
         // In Code Quiz: Write a program which undergo a for loop and breaks at some point even after that , finally statement gets printed.
         GroceryList();
         // Notice even after breaking the code , finally block is executed !
+
+        // Important note: The finally block will not be executed if program exits(either by calling System.exit() or by causing a fatal error that causes the process to abort)
     }
 }
 
