@@ -1,6 +1,13 @@
 import java.util.Scanner;
 import java.util.Random;
 
+class TriesEnd extends Exception{
+    @Override
+    public String toString() {
+        return "No more Attempts";
+    }
+}
+
 class LuckyDraw{
     int guessedNumber1;
     int guessedNumber2;
@@ -47,13 +54,18 @@ class LuckyDraw{
 
                 tries++;
 
+                // Ans to Q4.
 
-
-                if (this.tries == 6){
-                    System.out.println();
-                    System.out.println("***********************");
-                    System.out.println("Out of Attempts noww...");
-                    System.out.println("***********************");
+                if (this.tries == 6) {
+                    try {
+                        throw new TriesEnd();
+                    }
+                    catch (TriesEnd e) {
+                        System.out.println();
+                        System.out.println("***********************");
+                        System.out.println("Out of Attempts noww...");
+                        System.out.println("***********************");
+                    }
                 }
             }
         }
@@ -148,6 +160,9 @@ public class Ch14_88_Practice22 {
             LuckyDraw obj = new LuckyDraw();
             obj.arrayDefine();
             obj.Lotteryguess();
+
+            // Q4. Write a customException that is thrown if tries more than 5 are done
+            // Ans. Done Line 57
 
     }
 }
