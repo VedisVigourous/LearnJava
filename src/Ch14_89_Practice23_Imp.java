@@ -48,10 +48,47 @@ class InvalidTransactionAmountException extends RuntimeException{
     InvalidTransactionAmountException(String InvalidTransactionMessaage){
         super(InvalidTransactionMessaage);
     }
-
-
 }
+
 public class Ch14_89_Practice23_Imp {
+
+    static void performRiskyOperation(int divisor){
+        try{
+            if (divisor == 0){
+                System.out.println("Attempting Division by 0");
+                throw new ArithmeticException("Cannot be divided by 0");
+            }
+            else {
+                System.out.println("Quotient is : " + 100/divisor);
+            }
+        }
+        catch (ArithmeticException e){
+            System.out.println(e.getMessage());
+        }
+        finally {
+            System.out.println("Cleanup Operation Succesful!");
+        }
+    }
+
+    static void processPayments(String cardID , String amountString){
+        try{
+            if (cardID.length() != 14) {
+                throw new IllegalArgumentException("Invalid Card Number");
+            }
+            try {
+                double amount = Double.parseDouble(amountString);
+                System.out.println("Rs." + amount + " sending to: " + cardID);
+            }
+            catch (NumberFormatException e){
+                System.out.println("Inner catch: Invalid amount format");
+            }
+        }
+        catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+
 
     public static void calculateInterest(double principle , double rate , int years){
         int perYearRate = (int) rate/years;
@@ -148,7 +185,7 @@ public class Ch14_89_Practice23_Imp {
         }
         catch (InsufficientFundsException | InvalidTransactionAmountException FundsError){
             System.out.println(FundsError);
-        }
+        } System.out.println();
 
         System.out.println("**************");
 
@@ -160,6 +197,19 @@ public class Ch14_89_Practice23_Imp {
         // ***************** //
 
         // Q3. Finally-Block and Nested Try-Catch
+        // Finally - Guaranteed Excecution (method performRiskyOperation)
+        performRiskyOperation(0);
+        performRiskyOperation(10);
 
+        System.out.println();
+
+        // nested try-catch - method processPayment
+        // 1. No errors
+        System.out.println("Processing Amounts...");
+        processPayments("11YH-89G8-IH78" , "90000");
+        // 2. InvalidAmountString
+        processPayments("11YH-89G8-IH78" , "One Lakh");
+        // 3. InvalidCardID
+        processPayments("11YH89G8IH78" , "12000");
     }
 }
