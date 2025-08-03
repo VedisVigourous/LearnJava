@@ -17,7 +17,8 @@ public class Ch01_01_Main {  //Class consists of different functions to be execu
         System.out.print(sum);
     }
 }
-//static - enables code to run without creating object (creates an independent function)
+
+//static - adds something to the current class.
 //Naming Conventions 1. Class- PascalConvention 2. function - camelCaseConvention
 
 //Anatomy of a Java Code
