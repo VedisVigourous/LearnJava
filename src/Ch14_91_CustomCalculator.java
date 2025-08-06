@@ -1,3 +1,4 @@
+import javax.naming.LimitExceededException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -7,16 +8,23 @@ class Addition{
     double number2;
 
     Scanner NumberInput = new Scanner(System.in);
-    Addition() throws InvalidInputException{
+    Addition() throws InvalidInputException , MaxInputException{
         try {
             System.out.println("\n- Welcome to Addition Calculator -");
             System.out.print("Enter Number 1: ");
             this.number1 = NumberInput.nextDouble();
             System.out.print("Enter Number 2: ");
             this.number2 = NumberInput.nextDouble();
+            if (this.number1>100000 || this.number2>10000){
+                throw new MaxInputException();
+            }
         }
         catch (InputMismatchException e){
             throw new InvalidInputException();
+        }
+        catch (MaxInputException InputLimitExceeded){
+            System.out.println(InputLimitExceeded);
+            System.exit(101);
         }
     }
 
@@ -31,16 +39,23 @@ class Substraction{
     double number2;
 
     Scanner NumberInput = new Scanner(System.in);
-    Substraction() throws InvalidInputException{
+    Substraction() throws InvalidInputException , MaxInputException{
         try {
             System.out.println("\n- Welcome to Substraction Calculator -");
             System.out.print("Enter Number 1: ");
             this.number1 = NumberInput.nextDouble();
             System.out.print("Enter Number 2: ");
             this.number2 = NumberInput.nextDouble();
+            if (this.number1>100000 || this.number2>10000){
+                throw new MaxInputException();
+            }
         }
         catch (InputMismatchException e){
             throw new InvalidInputException();
+        }
+        catch (MaxInputException InputLimitExceeded){
+            System.out.println(InputLimitExceeded);
+            System.exit(101);
         }
     }
 
@@ -55,21 +70,35 @@ class Multiplication{
     double number2;
 
     Scanner NumberInput = new Scanner(System.in);
-    Multiplication() throws InvalidInputException{
+    Multiplication() throws InvalidInputException , MaxInputException , CannotMultiplyException{
         try {
             System.out.println("\n- Welcome to Multiplication Calculator -");
             System.out.print("Enter Number 1: ");
             this.number1 = NumberInput.nextDouble();
             System.out.print("Enter Number 2: ");
             this.number2 = NumberInput.nextDouble();
+            if (this.number1>7000 || this.number2>7000){
+                throw new CannotMultiplyException();
+            }
+            if (this.number1>100000 || this.number2>10000){
+                throw new MaxInputException();
+            }
         }
         catch (InputMismatchException e){
             throw new InvalidInputException();
         }
+        catch (MaxInputException InputLimitExceeded){
+            System.out.println(InputLimitExceeded);
+            System.exit(101);
+        }
+        catch (CannotMultiplyException MultiplicationLimitExceededException){
+            System.out.println(MultiplicationLimitExceededException);
+            System.exit(102);
+        }
     }
 
     void Product(){
-        System.out.println("~~ The Sum of specified Numbers are: " + (this.number1*this.number2));
+        System.out.println("~~ The Product of specified Numbers are: " + (this.number1*this.number2));
     }
 }
 
@@ -79,24 +108,31 @@ class Division{
     double number2;
 
     Scanner NumberInput = new Scanner(System.in);
-    Division() throws InvalidInputException , CannotDividebyZeroException {
+    Division() throws InvalidInputException , CannotDividebyZeroException , MaxInputException {
         try {
             System.out.println("\n- Welcome to Division Calculator -");
             System.out.print("Enter Number 1: ");
             this.number1 = NumberInput.nextDouble();
             System.out.print("Enter Number 2: ");
             this.number2 = NumberInput.nextDouble();
-            if (this.number2 == 0){
+            if (this.number2 == 0) {
                 throw new CannotDividebyZeroException();
+            }
+            if (this.number1>100000 || this.number2>10000){
+                throw new MaxInputException();
             }
         }
         catch (InputMismatchException e){
             throw new InvalidInputException();
         }
+        catch (MaxInputException InputLimitExceeded){
+            System.out.println(InputLimitExceeded);
+            System.exit(101);
+        }
     }
 
     void Quotient(){
-        System.out.println("~~ The Sum of specified Numbers are: " + (this.number1/this.number2));
+        System.out.println("~~ The Quotient of specified Numbers are: " + (this.number1/this.number2));
     }
 
 }
@@ -105,30 +141,40 @@ class Division{
 class InvalidInputException extends Exception{
     public static final String RED = "\u001B[31m";
     public static final String RESET = "\u001B[0m";
+    public static final String GREEN = "\u001B[32m";
     @Override
     public String toString() {
-        return RED + super.toString() + ": Enter a Valid Input" + RESET;
+        return RED + super.toString() +  ":" + GREEN + " Enter a Valid Input" + RESET;
     }
 }
 
 class CannotDividebyZeroException extends RuntimeException{
+    public static final String RED = "\u001B[31m";
+    public static final String RESET = "\u001B[0m";
+    public static final String GREEN = "\u001B[32m";
     @Override
     public String toString() {
-        return super.toString() + ": Numbers is indivisible by 0";
+        return RED +  super.toString() + ":" + GREEN + " Numbers is indivisible by 0" + RESET;
     }
 }
 
 class MaxInputException extends Exception{
+    public static final String RED = "\u001B[31m";
+    public static final String RESET = "\u001B[0m";
+    public static final String GREEN = "\u001B[32m";
     @Override
     public String toString() {
-        return super.toString() + ": Maximum Limit \'100,000\' Exceeded !";
+        return RED + super.toString() + ":" + GREEN + " Maximum Limit \'100,000\' Exceeded !" + RESET;
     }
 }
 
 class CannotMultiplyException extends Exception{
+    public static final String RED = "\u001B[31m";
+    public static final String RESET = "\u001B[0m";
+    public static final String GREEN = "\u001B[32m";
     @Override
     public String toString() {
-        return super.toString() + ": Multiplication with Numbers Greater than \'7000\' are Prohibited !";
+        return RED + super.toString() + ":" + GREEN + " Multiplication with Numbers Greater than \'7000\' are Prohibited !" + RESET;
     }
 }
 
