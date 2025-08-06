@@ -3,7 +3,7 @@ public class Ch02_09_ResultofArithOperations {
         //Results have some set of rules if not assigned a type
         //Theory:
         // byte + short =  int                      // i.e. dbl >> flt >> int >> byte=short=char
-        // short + int = int                        // if b,s,c occurs int often formed if not intervened by f , d
+        // short + int = int                        // if b,s,c occurs int is often formed if not intervened by f , d
         // long + flt = flt
         // int + float = flt
         // char + int = int

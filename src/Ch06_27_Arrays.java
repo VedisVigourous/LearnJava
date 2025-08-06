@@ -4,7 +4,7 @@ public class Ch06_27_Arrays {
 
         /* Arrays are - set of similar data type
          Example -  a class of 5 students with their respective marks
-         Rather than creating multiple variable it helps in storing large data */
+         Rather than creating multiple variable it helps in storing large data   */
 
         //1.Syntax of Arrays
         // Consist of two steps - Declaration (array making step) and memory allocation 

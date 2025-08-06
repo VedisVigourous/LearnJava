@@ -104,7 +104,7 @@ class Sphere extends Circle{
 
 	
 
-public class Ch12_70_Exercise5 {
+public class Ch12_70_ShapesConfigurations {
     public static void main(String[] args) {
         System.out.println();
 

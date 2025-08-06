@@ -3,18 +3,22 @@ public class Ch04_19_SwitchCase {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        //Else - If Ladder  //Note to avoid entering max value = put highest value first , Example written below;
+        //If-Else Ladder  //Note to avoid entering max value = put highest value first , Example written below;
         System.out.print("Enter your engine displacement: ");
         int EngDispl = input.nextInt();
         if (EngDispl > 0 && EngDispl < 1000) {
             System.out.println("Tax is 15%");
-        } else if (EngDispl >= 1000 && EngDispl < 1200) {
+        }
+        else if (EngDispl >= 1000 && EngDispl < 1200) {
             System.out.println("Tax = 18%");
-        } else if (EngDispl >= 1200 && EngDispl < 1500) {
+        }
+        else if (EngDispl >= 1200 && EngDispl < 1500) {
             System.out.println("Tax = 22%");
-        } else if (EngDispl >= 1500 && EngDispl < 2000) {
+        }
+        else if (EngDispl >= 1500 && EngDispl < 2000) {
             System.out.println("Tax = 28%");
-        } else {
+        }
+        else {
             System.out.println("Tax = 30%");
         }
 

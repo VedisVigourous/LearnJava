@@ -1,7 +1,7 @@
 public class Ch02_10_IncrementDecrement {
     public static void main(String[] args) {
         int i = 50;     //++ is used to increment the value
-        System.out.println(i++);  //(command prints i then increment) i.e. prints:50 + 1
+        System.out.println(i++);  //(command prints 'i' then increment) i.e. prints:50 + 1
         System.out.println(i);  // print : 51
         System.out.println(++i); // incrementation on 51 , prints : 52
         System.out.println(i);  // prints : 52
@@ -9,10 +9,10 @@ public class Ch02_10_IncrementDecrement {
         //Moreover
         System.out.println("*********");
         int y = 50;
-        int y1 = y++; //incrementation takes place afterward (Predicted value: 50) and after incremation 51
-        System.out.println(y1);
-        int y2 = ++y;//Incrementation takes before printing y (Predicted values: 52) here incremation takes place on 51
-        System.out.println(y2);
+        int y1 = y++; //incrementation takes place afterward (Predicted value: 50) and after incremation y = 51
+        System.out.println("y1: " + y1);
+        int y2 = ++y;//Incrementation takes before printing y (Predicted values: 52) here incremation takes place on y = 51
+        System.out.println("y2: " + y2);
 
         //Similarly for decrement
         System.out.println("*********");
