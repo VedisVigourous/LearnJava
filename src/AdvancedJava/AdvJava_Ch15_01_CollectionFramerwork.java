@@ -28,5 +28,10 @@ public class AdvJava_Ch15_01_CollectionFramerwork {
         //                                                                           b. Searching etc.
 
         // Syntax - java.util.collection
+
+        // *********************** //
+        // Collection Hierarchy can be understood by:
+        // https://en.wikipedia.org/wiki/Java_collections_framework#/media/File:Java.util.Collection_hierarchy.svg
+        // *********************** //
     }
 }
