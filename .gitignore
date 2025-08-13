@@ -27,3 +27,5 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/src/Basic_Java_Practice/BasicJavaPractice.java
+/src/Basic_Java_Practice/BasicJava_ThreadsPractice.java
