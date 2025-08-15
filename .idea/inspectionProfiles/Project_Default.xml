@@ -13,6 +13,10 @@
     <inspection_tool class="ExtractMethodRecommender" enabled="true" level="INFORMATION" enabled_by_default="true" />
     <inspection_tool class="FieldCanBeLocal" enabled="true" level="INFORMATION" enabled_by_default="true" />
     <inspection_tool class="FieldMayBeFinal" enabled="true" level="INFORMATION" enabled_by_default="true" />
+    <inspection_tool class="ForCanBeForeach" enabled="true" level="INFORMATION" enabled_by_default="true">
+      <option name="REPORT_INDEXED_LOOP" value="true" />
+      <option name="ignoreUntypedCollections" value="false" />
+    </inspection_tool>
     <inspection_tool class="GrazieInspection" enabled="true" level="INFORMATION" enabled_by_default="true" />
     <inspection_tool class="IfStatementWithIdenticalBranches" enabled="true" level="INFORMATION" enabled_by_default="true" />
     <inspection_tool class="InfiniteLoopStatement" enabled="false" level="WARNING" enabled_by_default="false" />
