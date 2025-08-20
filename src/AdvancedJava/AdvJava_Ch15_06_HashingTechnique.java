@@ -23,7 +23,21 @@ public class AdvJava_Ch15_06_HashingTechnique {
 
         *** Known Problems ***
         1. HashCollision - When two numbers are to be alloted on an same index ex. 11 & 21 both will get 1st index
-           1.1 Solution [Open Addressing- Increasing indexes i.e. Empty spaces are kept in HashTable so that the other number be alloted to nearest empty index. */
+           1.1 Solution 1 [Open Addressing- Increasing indexes i.e. Empty spaces are kept in HashTable so that the other number be alloted to nearest empty index.
+           1.2 Solution 2 [Chaining] - We link a linked list within the index and adds all the colliding value to it. {Like Multidimensional Arrays i.e. each index holding more indexes}
+
+        2. HashTable Capacity Exhaustion - When the hash-table is smaller than required, i.e. no more indexes left to insert other values
+           2.1 Solution - Creating a new HashTable with more indexes  */
+    
+    /* *** Concept *** -> 
+       Load Factor - It is the measure of how much values can be inserted to a Hash-Table before increasing it's Size.
+
+
+       ~~ Classes that use Hashing Technique -
+          1. HashSet
+          2. HashMap
+          3. Linked HashMap
+          4. HashTable */
     public static void main(String[] args) {
 
     }
