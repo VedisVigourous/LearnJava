@@ -20,7 +20,7 @@ public class Ch03_16_Practice6 {
 
         System.out.println("  ");
 
-        //Vowel Counter
+        //Vowel Detector
         System.out.print("Enter Your Statement: ");
         String statement = input.nextLine();
         int a = statement.indexOf('a');
