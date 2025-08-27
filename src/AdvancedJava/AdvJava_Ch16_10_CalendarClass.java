@@ -47,6 +47,11 @@ public class AdvJava_Ch16_10_CalendarClass {
         System.out.println("Chicago TimeZone : " + AmericanCalendar.getTimeZone());
         System.out.println("Chicago Time Zone ID: " + AmericanCalendar.getTimeZone().getID());
 
+        System.out.println();
+
+        // Note: getTime() returns date
+        System.out.println("Time Right Now is: " + myCalendar.getTime());
+
         // Important Note:
         // There are specified Calendar Classes : Ex. java.util.GregorianCalendar;
     }
