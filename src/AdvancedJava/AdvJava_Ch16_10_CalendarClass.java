@@ -8,7 +8,7 @@ public class AdvJava_Ch16_10_CalendarClass {
     /* Calendar Class - An abstract class
        * Even though it is an abstract class, but it provides a static method which helps to get an instance of the class.
 
-       * Syntax to intialize the calendar:
+       * Syntax to intialize the calendar: Important
          Calendar name = Calendar.getInstance(); // WE have now got instance of the calendar
          Calling methods now: name.getCalendarType(); Prints the calendar type ex. Hebrew , gregorian etc.
 
