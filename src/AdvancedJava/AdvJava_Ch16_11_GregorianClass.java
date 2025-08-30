@@ -93,7 +93,7 @@ public class AdvJava_Ch16_11_GregorianClass {
            Standard - Taken from Greenwich that is from GreenWich - IST = +5:30
 
            Methods:
-           1. getAvailableIDs()[int id] - specify the zone of give ID
+           1. getAvailableIDs()[int id] - specify the zone of given ID
            2. getDefault() - prints the default timezone
            3. getID() - prints id of a timezone
          */
