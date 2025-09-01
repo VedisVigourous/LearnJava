@@ -38,6 +38,8 @@ public class AdvJava_Ch17_15_Practice2 {
         Event program4 = new Event("Cricket Mania" , "Sahara" , LocalDate.of(2025, 9 , 30));
         Event program5 = new Event("Engineered Sports" , "Esports Mamba" , LocalDate.of(2025, 4 , 25));
 
+        // LocalDate.of() - used to create an instance of Specified Date
+
         ArrayList<Event> programsList = new ArrayList<>();
         programsList.add(program1);
         programsList.add(program2);
