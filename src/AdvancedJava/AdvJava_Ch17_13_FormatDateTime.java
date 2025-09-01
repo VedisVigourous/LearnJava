@@ -24,7 +24,7 @@ public class AdvJava_Ch17_13_FormatDateTime {
         System.out.println("Default Time Format is: " + defaultTime); System.out.println();
 
         /* To print date in our prescribes format 2 steps are needed:
-           1. setting of format- Using ofPatter() method of DateTimeFormatter
+           1. setting of format- Using ofPattern() method of DateTimeFormatter
            DateTimeFormatter <formatName> = DateTimeFormatter.ofPattern("Specify Pattern");
            ~ Symbols -
              a. d = date
@@ -41,7 +41,7 @@ public class AdvJava_Ch17_13_FormatDateTime {
              **** Some PreDefined Formats: https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/time/format/DateTimeFormatter.html#predefined
 
            2. Telling the System to parse the date in Specified Format
-           String <name> = Date_To_Formatformat(<formatName>);
+           String <name> = Date_To_Format.format(<formatName>);
 
            Then Print.     */
 
