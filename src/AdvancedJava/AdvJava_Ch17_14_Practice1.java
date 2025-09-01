@@ -65,7 +65,7 @@ public class AdvJava_Ch17_14_Practice1 {
         LocalDateTime time = LocalDateTime.now();
         DateTimeFormatter formattedDate = DateTimeFormatter.ofPattern("HH:mm:ss");
         String myTime = time.format(formattedDate);
-        System.out.println("Formatte Time: " + myTime);
+        System.out.println("Formatted Time: " + myTime);
 
         System.out.println();
         System.out.println("********************");
@@ -84,7 +84,7 @@ public class AdvJava_Ch17_14_Practice1 {
         // Length should be: 7
 
         System.out.println("Elements of HashSet: " + years);
-        System.out.println("Lenght: " + years.size());
+        System.out.println("Length: " + years.size());
 
         // Note: Length printed will be 5 deleting the duplicate items: Hence Proved - Sets doesn't allow duplicate elements.
     }
