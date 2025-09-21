@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"AdvancedJava","c":"AdvJava_Ch18_18_TagsinJavaDoc","l":"AdvJava_Ch18_18_TagsinJavaDoc()","u":"%3Cinit%3E()"},{"p":"AdvancedJava","c":"AdvJava_Ch18_18_TagsinJavaDoc","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();

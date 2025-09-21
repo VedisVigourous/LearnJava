@@ -16,4 +16,14 @@ public class AdvJava_Ch18_17_OwnJavaDocs {
        Javadoc - generates the java documentation automatically in HTML format
 
        To create a more immersive documentation - java provides us with TAGS - */
+
+    /* ** Manually Create JavqDocs
+       * Syntax - "File_Path" attributes -d "Path_To_Save_Generated_Doc"
+       * Attributes are:
+            1. -protected
+            2. -use
+            3. -version
+            4. -author
+            5. -splitindex etc.
+     */
 }
