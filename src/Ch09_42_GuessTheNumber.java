@@ -40,9 +40,8 @@ class guessGame{
             System.out.println("|| Java - 2025 ||");
         }
     }
-    public int getNoGuesses(){
+    public void getNoGuesses(){
         System.out.println("No of attempts: " + noGuesses);
-        return noGuesses;
     }
 }
 public class Ch09_42_GuessTheNumber {
