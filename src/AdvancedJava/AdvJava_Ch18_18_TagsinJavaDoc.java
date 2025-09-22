@@ -44,7 +44,8 @@ public class AdvJava_Ch18_18_TagsinJavaDoc {
         System.out.print("Enter Num 2: "); int num2 = input.nextInt();
         System.out.println();        System.out.printf("The Sum of %d and %d is: %d" , num1 , num2 , num1+num2);
     }
+
     public static void main(String[] args) {
-        Sum();
+    Sum();
     }
 }
