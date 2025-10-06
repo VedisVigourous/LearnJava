@@ -1,1 +1,1 @@
-typeSearchIndex = [{"p":"AdvancedJava","l":"AdvJava_Ch18_18_TagsinJavaDoc"},{"l":"All Classes and Interfaces","u":"allclasses-index.html"}];updateSearchResults();
+typeSearchIndex = [{"p":"AdvancedJava","l":"AdvJava_Ch18_19_MethodTags"},{"l":"All Classes and Interfaces","u":"allclasses-index.html"}];updateSearchResults();
