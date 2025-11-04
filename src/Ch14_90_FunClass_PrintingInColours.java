@@ -30,6 +30,6 @@ public class Ch14_90_FunClass_PrintingInColours {
         System.out.println("GREEN: " + GREEN + statement + RESET);
         System.out.println("YELLOW: " + YELLOW + statement + RESET);
         System.out.println("BLUE: " + BLUE + statement + RESET);
-        System.out.println("WHITE: " + RESET + statement + RESET);
+        System.out.println("WHITE: " + RESET + statement);
     }
 }
