@@ -64,7 +64,7 @@ public class AdvJava_Ch19_21_LambdaExpressions {
 
         System.out.println();
 
-        // Note if a : interface method has a parameter - define it within the parenthesis-()
+        // Note if a : interface method has a parameter - define it within the parenthesis-() and then call the desired method.
 
         announcements3 obj2 = (noOfTeams)->{
             System.out.printf("No. of Teams losing are %d" , noOfTeams);
