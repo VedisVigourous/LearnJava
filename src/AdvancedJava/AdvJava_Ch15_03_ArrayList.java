@@ -3,10 +3,10 @@ import java.util.*;
 
 public class AdvJava_Ch15_03_ArrayList {
 
-    /* ArrayList - These are modified arrays which helps the user to, program with variable or resizable arrays with convinience.
+    /* ArrayList - These are modified arrays which helps the user to, program with variable or resizable arrays with convenience.
 
        ~ Syntax to Initialize an ArrayList-
-         - ArrayList<datatype> ArrayList_Name = new ArrayList<>();
+         - ArrayList<datatype> ArrayList_Name = new ArrayList<>(); // Note: Datatype cannot  be of primitive datatype : i.e. Integer is used instead of int.
 
        ~ Important ArrayList Methods-
          1. AL_name.add(int index , E element_to_add) - Adds an specified element to a specified index
