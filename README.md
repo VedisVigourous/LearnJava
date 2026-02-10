@@ -7,7 +7,7 @@ Dive into the `src` folder for chapter-wise programs and quick revision helpers.
 
 ### 🌟 Quick Access
 
-- 🔗 Source code: https://github.com/VedisVigourous/LearnJava/tree/main/src
+- 🔗 Source code: [ 🧑‍💻 Src](https://github.com/VedisVigourous/LearnJava/tree/main/src)
 - 📚 JavaDocs: MyJavaDocs/
 
 ---
@@ -81,7 +81,7 @@ Dive into the `src` folder for chapter-wise programs and quick revision helpers.
 Let us connect:
 
 [![Email](https://img.shields.io/badge/Email-codegrounds666%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:codegrounds666@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-your--handle-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vadanta-kumar-chauhaan-736581375/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Vadanta--Kumar--Chauhaan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vadanta-kumar-chauhaan-736581375/)
 [![GitHub](https://img.shields.io/badge/GitHub-VedisVigourous-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/VedisVigourous)
 [![Instagram](https://img.shields.io/badge/Instagram-vedant__chauhaan-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/vedant_chauhaan)
 
