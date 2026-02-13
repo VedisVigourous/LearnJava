@@ -52,7 +52,7 @@ Dive into the `src` folder for chapter-wise programs and quick revision helpers.
 | [Guess The Number](https://github.com/VedisVigourous/LearnJava/blob/main/src/Ch09_42_GuessTheNumber.java) | Loops, user input |
 | [Online Library](https://github.com/VedisVigourous/LearnJava/blob/main/src/Ch10_49_OnlineLibrary.java) | Classes, methods |
 | [Online Showroom](https://github.com/VedisVigourous/LearnJava/blob/main/src/Ch10_50_OnlineShowroom.java) | Inheritance, polymorphism |
-| [Custom Calculator](https://github.com/VedisVigourous/LearnJava/blob/main/src/Ch01_04_Practice1.java) | Exceptions, validation |
+| [Custom Calculator](https://github.com/VedisVigourous/LearnJava/blob/main/src/Ch14_91_CustomCalculator.java) | Exceptions, validation |
 
 ---
 
