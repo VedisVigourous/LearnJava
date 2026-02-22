@@ -29,6 +29,7 @@
       <option name="ignoreDeprecatedConstructors" value="false" />
       <option name="m_limit" value="5" />
     </inspection_tool>
+    <inspection_tool class="Convert2Diamond" enabled="true" level="INFORMATION" enabled_by_default="true" />
     <inspection_tool class="DataFlowIssue" enabled="true" level="INFORMATION" enabled_by_default="true">
       <option name="SUGGEST_NULLABLE_ANNOTATIONS" value="false" />
       <option name="DONT_REPORT_TRUE_ASSERT_STATEMENTS" value="false" />
