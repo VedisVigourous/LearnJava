@@ -5,6 +5,7 @@ import java.util.Map;
 
 public class AdvJava_Ch21_24_HashMap {
     public static void main(String[] args) {
+
         /* A dictionary is one which has a key object, and it's meaning known as Value and they both are known as
            Key - > Value Pair
 
@@ -18,6 +19,7 @@ public class AdvJava_Ch21_24_HashMap {
 
            Adding a key-value Pair:
            objectName.put(<KEY> , <VALUE>); -- key and value must be of the datatype defined */
+           
 
         // Initializing and Inserting Key Value pairs:
         Map<Integer , String> weekDays = new HashMap<Integer , String>();
@@ -33,7 +35,7 @@ public class AdvJava_Ch21_24_HashMap {
         weekDays.remove(7);
 
         // 1. Retrieving a Value by inserting a Key
-        System.out.println("Value for Key 5: " + weekDays.get(5));
+        System.out.println("Value for Key 5: " + weekDays.get(9));
 
         System.out.println();
 
