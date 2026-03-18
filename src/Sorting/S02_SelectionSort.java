@@ -65,3 +65,40 @@ public class S02_SelectionSort {
         System.out.print("Sorted Array: " + Arrays.toString(arr) + "\n");
     }
 }
+
+
+
+/*      =======================================
+        BETTER AND STANDARD - MIN APPROACH
+        =======================================
+
+        int [] array = { 5 , 4 , 3 , 2 ,1 , 0};
+
+        * 5 4 3 2 1 0
+         * 0 4 3 2 1 5
+         * 0 1 3 2 4 5
+         * 0 1 2 3 4 5
+
+        for(int i = 0 ; i < array.length - 1  ; i++){
+
+        int minIndex = i;
+        for(int j = i+1 ; j< array.length ; j++){
+            if(array[j] <= array[minIndex]) {
+                minIndex = j;
+            }
+        }
+
+        if(i != minIndex) {
+            int temp = array[i];
+            array[i] = array[minIndex];
+            array[minIndex] = temp;
+        }
+    }
+
+
+    ================================
+    Better Because :
+    No extra variables to be used, and we directly work with outer-loop variable
+    And much lesser iterations
+    ================================
+ */
