@@ -1,5 +1,7 @@
 package Sorting;
 
+import java.util.Arrays;
+
 public class S02_SelectionSort {
     public static void main(String[] args) {
         /* In selection sort unlike other algos
@@ -30,11 +32,7 @@ public class S02_SelectionSort {
 
         int [] arr = { 14 , 12 , 5 , 8 , 20 , 1 , 19 , 0};
 
-        System.out.print("Initial Array: " + "[ ");
-        for (int elem : arr){
-            System.out.print(elem + " ");
-        }
-        System.out.println("]");
+        System.out.print("Initial Array: " + Arrays.toString(arr) + "\n\n");
 
 
         /* Note: The max no of steps taken to sort will be upto = (n - 1)
@@ -64,10 +62,6 @@ public class S02_SelectionSort {
             }
         }
 
-        System.out.print("Sorted Array: " + "[ ");
-        for (int elem : arr){
-            System.out.print(elem + " ");
-        }
-        System.out.println("]");
+        System.out.print("Sorted Array: " + Arrays.toString(arr) + "\n");
     }
 }
