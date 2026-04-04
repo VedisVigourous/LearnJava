@@ -17,50 +17,42 @@
     |------------------|
     | Primitive Data   |
     |------------------|
-    | Primitive Data   |
-    |------------------|
-    | Primitive Data   |
-    |------------------|
 
-    For primitive values, Java copies the value during assignment.
+    For primitive values, Java copies the actual value during assignment.
     The original variable is not modified when the copied variable changes.
 */
 
 public class Ch01_02_IntroToMemories {
     public static void main(String[] args) {
-        String originalName = "Vedant";
-        String nickName = originalName;
-        nickName = "Vedu";
+
+        // --- PROPER STACK EXAMPLE USING PRIMITIVES ---
+        int originalScore = 100;
+        int newScore = originalScore;
+        newScore = 50;
 
         System.out.println("\nSTACK MEMORY:-\n");
-        System.out.printf("Original Name: %s%n", originalName);
-        System.out.printf("Nick Name: %s%n", nickName);
+        System.out.printf("Original Score: %d%n", originalScore);
+        System.out.printf("New Score: %d%n", newScore);
 
         /* Explanation:
-         * The moment we assign the value of originalName to nickName,
-         * a copy of the reference value is assigned.
-         * Since String is immutable in Java, changing nickName by reassigning it
-         * does not affect originalName.
-        */
+         * The moment we assign originalScore to newScore, Java makes a
+         * brand new copy of the number 100 on the Stack.
+         * Changing newScore to 50 does absolutely nothing to originalScore.
+         */
 
         /* HEAP MEMORY REPRESENTATION -
             |-----------------|                        ============================
             |------STACK------|                        ||                         ||
-            |-----------------|                        ||                         ||
             |-----------------|                        ||        OBJECTS          ||
             |------STACK------|  ------------------>   ||          ARRAYS         ||
-            |-----------------|        Pointer         ||        FUNCTIONS*       ||
-            |-----------------|                        ||                         ||
-            |------STACK------|                        ||                         ||
+            |-----------------|        Pointer         ||                         ||
             |-----------------|                        ============================
-
-            (* In Java, methods belong to classes and objects are stored in heap.)
 
             Variables of reference types store memory addresses (references)
             to objects in the heap, not the full object value directly.
         */
 
-        // Example:
+        // --- HEAP EXAMPLE USING OBJECTS ---
         User user1 = new User("Vedant");
         User user2 = user1;
         user2.name = "Vedu"; // Updating object through user2
@@ -70,27 +62,38 @@ public class Ch01_02_IntroToMemories {
         System.out.printf("User 2 Name: %s%n", user2.name);
 
         /* Explanation:
-         * When we assign user1 to user2, both references point to the same object in heap memory.
-         * Therefore, when we update the object through user2, it also reflects in user1.
-        */
+         * When we assign user1 to user2, both references point to the exact
+         * same object in heap memory. Therefore, when we update the object
+         * through user2, it also reflects in user1.
+         */
 
-        /* Think of it Like:
-           * A person named Vedant is:
-             - A human
-             - A student
-             - A son
-             - A brother etc.
+        /* ====================================================================
+           PASS BY VALUE (Explained for a 7-year-old... who is a genius)
+           ====================================================================
+           Imagine you have a piece of paper with the number 5 on it.
+           Your friend asks for it. You don't give them your paper!
+           Instead, you put it in a copy machine, print a PHOTOCOPY,
+           and hand the photocopy to your friend.
 
-             = All these roles are like different references pointing to the same person.
+           If your friend takes a red crayon and scribbles "99" over
+           THEIR photocopy, does your original paper change? Nope!
+           Yours still says 5.
 
-           * If one role changes the person:
-             - e.g., brother changes hairstyle, all roles observe the updated person.
+           THAT is "Pass by Value". Java NEVER gives away the original
+           variable. It ALWAYS hands out a photocopy.
 
-             = Hence, same reference behavior with heap objects.
+           BUT WAIT! What about Objects (like our User class)?
+           Imagine you have a treasure map (a Reference) pointing to a
+           real-life Toy Box (an Object in the Heap).
 
-             In short: Same person may be assigned to different roles,
-             but if the person changes, all roles observe that change.
-        */
+           Java STILL just makes a photocopy of the MAP.
+           But think about it: If your friend uses their copied map to go
+           find the Toy Box and takes a toy out... when YOU use your map
+           to go to the Toy Box later, that toy is gone!
+
+           Java passed the value (a copy of the map), but both maps
+           point to the exact same Toy Box.
+           ==================================================================== */
     }
 
     static class User {
