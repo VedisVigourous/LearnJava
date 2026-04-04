@@ -56,6 +56,7 @@ MyJavaDocs/                    # Generated JavaDocs
 | Chapter | Topic | Start File |
 | --- | --- | --- |
 | 01 | Java Basics | [Ch01_01_Main.java](src/Ch01_01_Main.java) |
+| 01.5 | **⭐ Memory Fundamentals** | **[Ch01_02_IntroToMemories.java](src/Ch01_02_IntroToMemories.java)** |
 | 02 | Operators | [Ch02_07_Operators.java](src/Ch02_07_Operators.java) |
 | 03 | Strings | [Ch03_13_Strings.java](src/Ch03_13_Strings.java) |
 | 04 | Conditionals & Switch | [Ch04_17_Conditionals.java](src/Ch04_17_Conditionals.java) |
@@ -69,6 +70,25 @@ MyJavaDocs/                    # Generated JavaDocs
 | 12 | JVM & Packages | [Ch12_62_Interpreter_n_Compiler.java](src/Ch12_62_Interpreter_n_Compiler.java) |
 | 13 | Multithreading | [Ch13_71_MultiThreading.java](src/Ch13_71_MultiThreading.java) |
 | 14 | Exceptions | [Ch14_81_ErrorsinJava.java](src/Ch14_81_ErrorsinJava.java) |
+
+## 💎 Special Mention: The Memories File
+
+> **This is the diamond of the Gold Java Repo!**
+
+### [Ch01_02_IntroToMemories.java](src/Ch01_02_IntroToMemories.java)
+
+This foundational file is **critical to understanding how Java works**. It covers:
+
+- **Stack vs Heap Memory** - The backbone of Java memory management
+- **Pass by Value concept** - With genius-level analogies (seriously, the photocopy & treasure map explanations are gold!)
+- **Primitive vs Reference types** - Why changing one variable doesn't affect another
+- **Object references** - Understanding how objects in heap memory work
+
+**Why it matters:** Without a solid grasp of stack/heap memory, you'll be confused about why certain operations work the way they do. This file demystifies the magic!
+
+**Recommendation:** Read this early and revisit it before diving into OOP, Collections, or anything involving object manipulation.
+
+---
 
 ## Important Files
 
