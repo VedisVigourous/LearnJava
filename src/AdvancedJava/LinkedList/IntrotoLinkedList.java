@@ -4,12 +4,10 @@ package AdvancedJava.LinkedList;
 /* NOTE:
    "This uses Java's Collections Framework. We use this for fast app development (like Spring Boot or Android) when we just need a list to work immediately. DO NOT use this for DSA interviews" */
 
-import java.util.LinkedList;
-
-public class LinkedList_24_BuiltInListDemo {
+public class IntrotoLinkedList {
 
     /* LinkedList vs ArrayList:
-       1. Even though ArrayList are convinient, they overall are themselves an Array that is
+       1. Even though ArrayList are convenient, they overall are themselves an Array that is
        2. After providing, methods to communicate efficiently with them they work like an Array.
           Ex. For Insertion and Deletion of an Element, we need to shift the other elements which costs hardware and time.
 
@@ -39,7 +37,7 @@ public class LinkedList_24_BuiltInListDemo {
            4. peek() , peekFirst() and Last() - retrieves first and last element of the List
            etc. on https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/LinkedList.html#method-summary    */
 
-        LinkedList<String> shoppingList = new LinkedList<>();
+        java.util.LinkedList<String> shoppingList = new java.util.LinkedList<>();
         shoppingList.add("Soft Drink");
         shoppingList.add("Veggies");
         shoppingList.add("Noodles");
