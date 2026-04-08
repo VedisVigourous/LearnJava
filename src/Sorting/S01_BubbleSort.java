@@ -28,12 +28,19 @@ public class S01_BubbleSort {
 
     static void BubbleSort(int [] arr) {
         for(int pass = 0; pass < (arr.length-1) ; pass++){
+            boolean swapped = false; // To optimize the algorithm by breaking early if the array is already sorted
             for(int compare = 0 ; compare< (arr.length-pass-1); compare++){
                 if (arr[compare] > arr[compare+1]) {
                     int temp = arr[compare+1];
                     arr[compare+1] = arr[compare];
                     arr[compare] = temp;
+                    swapped = true; // Mark that a swap has occurred
                 }
+            }
+
+            // If no swaps were made, the array is already sorted
+            if (!swapped) {
+                break;
             }
         }
     }
