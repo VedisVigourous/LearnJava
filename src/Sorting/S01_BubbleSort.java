@@ -21,6 +21,11 @@ public class S01_BubbleSort {
           - Best Case: BigO - O(n) [when the array is already sorted]
           - Average Case: BigO - O(n²)  */
 
+    /* Note: Stable vs Unstable Sorting Algorithms: [The same element disorder]
+       - A stable sorting algorithm maintains the relative order of records with equal keys (i.e., values).
+       - An unstable sorting algorithm may change the relative order of records with equal keys.
+       - Bubble Sort is a stable sorting algorithm because it only swaps adjacent elements when they are in the wrong order, thus preserving the relative order of equal elements. */
+
     static void BubbleSort(int [] arr) {
         for(int pass = 0; pass < (arr.length-1) ; pass++){
             for(int compare = 0 ; compare< (arr.length-pass-1); compare++){
