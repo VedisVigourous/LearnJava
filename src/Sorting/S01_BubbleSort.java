@@ -4,20 +4,37 @@ import java.util.Arrays;
 
 public class S01_BubbleSort {
 
+    /* Intro to Bubble Sort: [also known as Sinking Sort or Exchange Sort]
+       - It is a simple sorting algorithm that compares adjacent elements and swaps them if they are in the wrong order.
+       - The process is repeated until the entire array is sorted.
+       - Each array traversal is called a "pass". After each pass, the largest unsorted element is moved to its correct position.
+
+        Loop Boundary Conditions:
+        - Outer Loop: from 0 to length - 1:
+                      - Because the iteration will not cover the last remaining element as it will be in its desired position automatically
+        - Inner Loop: from 0 to length - i - 1:
+                      - We don't need to cover the last element as with each pass the largest element will be at last index. i.e. already sorted.
+
+
+        * Complexity of Bubble Sort:
+          - Worst Case: BigO - O(n²)
+          - Best Case: BigO - O(n) [when the array is already sorted]
+          - Average Case: BigO - O(n²)  */
+
     static void BubbleSort(int [] arr) {
-        for(int i = 0; i < (arr.length-1) ; i++){
-            for(int j = 0 ; j< (arr.length-i-1); j++){
-                if (arr[j] > arr[j+1]) {
-                    int temp = arr[j+1];
-                    arr[j+1] = arr[j];
-                    arr[j] = temp;
+        for(int pass = 0; pass < (arr.length-1) ; pass++){
+            for(int compare = 0 ; compare< (arr.length-pass-1); compare++){
+                if (arr[compare] > arr[compare+1]) {
+                    int temp = arr[compare+1];
+                    arr[compare+1] = arr[compare];
+                    arr[compare] = temp;
                 }
             }
         }
     }
 
     public static void main(String[] args) {
-        int [] arr = {5 , 4 , 1 , 2 ,3 , 0};
+        int [] arr = {3 , 1 , 5 , 4 , 2 , 0};
 
         System.out.println("Initial Array: " + Arrays.toString(arr));
 
