@@ -126,5 +126,3 @@ public class LList {
         System.out.println("The Size of the LinkedList is : " + list.size);
     }
 }
-
-/* In a nutshell just visualize nodes of a LL and where to point the next pointer of the current node and the new node and you will be able to easily add a value at any index of the LL. */
