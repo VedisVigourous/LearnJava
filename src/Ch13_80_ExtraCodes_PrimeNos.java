@@ -9,20 +9,39 @@ class PrimeRange{
         this.stop = stop;
     }
 
-    void Check(){
-        System.out.println("Prime No in the Range is: ");
-        for (int number = this.start; number <= stop; number++){
-            int divisorCount = 0;
-            for(int divisor = 1; divisor <= number; divisor++){
-                if (number % divisor == 0){
-                    divisorCount++;
-                }
-                }
-            if (divisorCount == 2){
-                System.out.println("* " + number);
-            }
+//    void Check(){
+//        System.out.println("Prime No in the Range is: ");
+//        for (int number = this.start; number <= stop; number++){
+//            int divisorCount = 0;
+//            for(int divisor = 1; divisor <= number; divisor++){
+//                if (number % divisor == 0){
+//                    divisorCount++;
+//                }
+//                }
+//            if (divisorCount == 2){
+//                System.out.println("* " + number);
+//            }
+//        }
+//    }
+
+    boolean checkEfficient(int num) {
+        if (num < 2) {
+            return false;
         }
+
+        int pm = 2;
+        while (pm * pm <= num) {
+            if (num % pm == 0) {
+                return false;
+            }
+            pm++;
+        }
+        return true;
     }
+
+    /* Prime nos are being checked till the square root of the number because if a number is divisible by any number greater than its square root,
+     * It must have a corresponding divisor that is less than the square root.
+     * Therefore, checking up to the square root is sufficient to determine if a number is prime or not. */
 }
 public class Ch13_80_ExtraCodes_PrimeNos {
     public static void main(String[] args) {
@@ -51,5 +70,6 @@ public class Ch13_80_ExtraCodes_PrimeNos {
         // Code 2 - To print all prime numbers within a range
         PrimeRange primechecker = new PrimeRange(1 , 50);
 //        primechecker.Check();
+        System.out.println(primechecker.checkEfficient(6));
     }
 }
