@@ -110,8 +110,28 @@ public class LList {
                    temp.next = node;
 
                 That is both the node and temp will point the same and then temp will point the new node. */
-
         }
+    }
+
+
+    /* To delete the first element: Just shifting head does the job
+       1. check if the list is empty just return the method
+       2. If the head and tail are both on the same position that is only one element is present hence both should be now pointing to null
+          - Giving an empty linked list
+       3. Else just shift the head to next by head = head.next;   */
+    public void deleteFirst (){
+        if(head == null){
+            return;
+        }
+
+        if (head == tail) {
+            head = null;
+            tail = null;
+        }
+        else {
+            head = head.next;
+        }
+        size--;
     }
 
     public static void main(String[] args) {
@@ -122,6 +142,12 @@ public class LList {
         list.addFirst(80);
         list.addLast(13); // Should be displayed at the last of the LL
         list.addAtIndex(8 , 4); // Should be displayed at the 4th index of the LL
+        list.displayLL();
+        System.out.println("The Size of the LinkedList is : " + list.size);
+
+        System.out.println();
+
+        list.deleteFirst();
         list.displayLL();
         System.out.println("The Size of the LinkedList is : " + list.size);
     }
