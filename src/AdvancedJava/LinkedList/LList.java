@@ -134,6 +134,90 @@ public class LList {
         size--;
     }
 
+
+    /* To delete a node from last - in singly linked list we don't have an option to go to previous node
+       1. Hence, after tackling cases like:
+          1.1. If tail doesn't exist that is empty linked list ; just return
+          1.2. If head and tail are equal that is only one node is present ; called the deleteFirst() method
+       2. Else, Creating a temporary node assigned to head
+       3. Traverse until next node is tail
+       4. Assigns the tail to the current value of temp and set the next to null (i.e. delete the last node) */
+    public void deleteLast(){
+        if(tail == null){
+            return;
+        }
+
+        Node temp = head;
+
+        if(head == tail){
+            deleteFirst();
+        }
+        else {
+        while(temp.next != tail){
+            temp = temp.next;
+        }
+        tail = temp;
+        temp.next = null;
+
+        size--;
+        }
+    }
+
+    /* To delete a node at a particular index:
+       1. If index is 0, directly use deleteFirst() as the first node has to be removed.
+       2. If index is size - 1, directly use deleteLast() as the last node has to be removed.
+       3. Otherwise, traverse till the node before the required index.
+       4. Change the next pointer of that previous node to the next of the current node.
+       5. This skips the node at the given index and removes it from the LinkedList.
+       6. Finally, decrease the size by 1 after successful deletion. */
+    public void deleteAtIndex(int index) {
+        if (index == 0) {
+            deleteFirst();
+            return;
+        }
+
+        if (index == size - 1) {
+            deleteLast();
+            return;
+        }
+
+        try {
+            Node temp = head;
+            for (int ind = 0; ind < index; ind++) {
+                temp = temp.next;
+            }
+
+            temp.next = temp.next.next;
+
+            size--;
+        } catch (Exception e) {
+            System.out.println("Exception Occurred recheck Indexes!");
+        }
+    }
+
+    /* To find a node with a particular value in the LinkedList:
+       1. Initialize a temporary node at head and an index counter at 0.
+       2. Traverse the LinkedList while temp is not null and the current node's data doesn't match the value.
+       3. Keep moving to the next node and increment the index.
+       4. Once the loop stops, if temp is not null, it means we found the node - print its index.
+       5. If temp is null, it means we reached the end without finding the value - print "No Such Node!" */
+    public void find(int val){
+        Node temp = head;
+        int index = 0;
+
+        while(temp != null && temp.data != val){
+            temp = temp.next;
+            index++;
+        }
+
+        if(temp != null){
+            System.out.println("Node is at index: " + index);
+        }
+        else {
+            System.out.println("No Such Node!");
+        }
+    }
+
     public static void main(String[] args) {
         LList list = new LList();
         list.addFirst(5);
@@ -150,5 +234,19 @@ public class LList {
         list.deleteFirst();
         list.displayLL();
         System.out.println("The Size of the LinkedList is : " + list.size);
+
+        System.out.println();
+
+        list.deleteLast();
+        list.displayLL();
+        System.out.println("The Size of the LinkedList is : " + list.size);
+
+        System.out.println();
+        list.deleteAtIndex(3);
+        list.displayLL();
+        System.out.println("The Size of the LinkedList is : " + list.size);
+
+        System.out.println();
+        list.find(7);
     }
 }
