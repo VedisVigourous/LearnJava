@@ -149,6 +149,109 @@ public class DoublyLL {
         size++;
     }
 
+
+    /* DeleteFirst - Mental Approach:
+       1. First check whether the LinkedList exists or not
+          1.1. If head is null, there is nothing to delete
+       2. If there is only one node in the list
+          2.1. Set head to null so the list becomes empty
+          2.2. Decrease size by 1
+       3. If there are multiple nodes
+          3.1. Move head to the next node
+          3.2. Make the new head's prev pointer null because it is now the first node
+          3.3. Decrease size by 1
+       Result: The first node is removed and the doubly links stay valid */
+    void deleteFirst(){
+        if(head == null){
+            System.out.println("Linked List doesn't exist!");
+            return;
+        }
+
+        if (head.next == null) {
+            head = null;
+            size--;
+            return;
+        }
+
+        head = head.next;
+        head.prev = null;
+        size--;
+    }
+
+    /* DeleteLast - Mental Approach:
+       1. First check whether the LinkedList exists or not
+          1.1. If head is null, there is nothing to delete
+       2. If there is only one node in the list
+          2.1. Set head to null so the list becomes empty
+          2.2. Decrease size by 1
+       3. If there are multiple nodes
+          3.1. Traverse till the node just before the last node
+          3.2. Disconnect the last node by setting temp.next = null
+          3.3. Decrease size by 1
+       Result: The last node is removed and the doubly links stay valid */
+    void deleteLast(){
+        if(head == null){
+            System.out.println("Linked List doesn't exist!");
+            return;
+        }
+
+        if (head.next == null) {
+            head = null;
+            size--;
+            return;
+        }
+
+        Node temp = head;
+        while(temp.next.next != null){
+            temp = temp.next;
+        }
+
+        temp.next = null;
+        size--;
+    }
+
+
+    /* DeleteAtIndex - Mental Approach:
+       1. First check whether the given index is valid or not
+          1.1. If index is less than 0 or greater than/equal to size, it is invalid
+       2. If index is 0, directly use deleteFirst()
+       3. If index is size - 1, directly use deleteLast()
+       4. For any middle index, traverse till the node at that exact index
+       5. Keep references of the previous and next nodes around the node to be deleted
+       6. Reconnect previous node to next node using previous.next = next
+       7. Reconnect next node back to previous node using next.prev = previous
+       8. Decrease size by 1
+       Result: The node at the given index is removed and the doubly links remain valid */
+    void deleteAtIndex(int index){
+        if(index < 0 || index >= size){
+            System.out.println("Invalid index!");
+            return;
+        }
+
+        if(index == 0){
+            deleteFirst();
+            return;
+        }
+
+        if(index == size-1){
+            deleteLast();
+            return;
+        }
+
+        Node temp = head;
+        for(int i = 0 ; i < index; i++){
+            temp = temp.next;
+        }
+
+        Node previous = temp.prev;
+        Node next = temp.next;
+
+        previous.next = next;
+        next.prev = previous;
+
+        size--;
+    }
+
     public static void main(String[] args) {
         DoublyLL obj = new DoublyLL();
         obj.insertFirst(30);
@@ -159,6 +262,21 @@ public class DoublyLL {
 
         obj.insertAtIndex(65 , 2);
         obj.insertAtIndex(75 , 6);
+
+        obj.displayDLL();
+        System.out.println();
+
+        obj.displayDLLReversed();
+        System.out.println();
+
+        System.out.println("Size of LinkedList: " + obj.size);
+
+        // ****************** //
+        System.out.println("\n****************\nDeletions\n****************\n");
+
+        obj.deleteFirst();
+        obj.deleteLast();
+        obj.deleteAtIndex(2);
 
         obj.displayDLL();
         System.out.println();
