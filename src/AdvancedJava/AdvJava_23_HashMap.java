@@ -35,7 +35,7 @@ public class AdvJava_23_HashMap {
         weekDays.remove(7);
 
         // 1. Retrieving a Value by inserting a Key
-        System.out.println("Value for Key 5: " + weekDays.get(9));
+        System.out.println("Value for Key 5: " + weekDays.get(5));
 
         System.out.println();
 
