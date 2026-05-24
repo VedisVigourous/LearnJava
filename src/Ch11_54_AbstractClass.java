@@ -25,7 +25,7 @@ public class Ch11_54_AbstractClass {
     //                    1. Either label it as an abstract class 
     //                    2. Or Override it's method to avoid error.
     // Ex.
-    
+
     abstract class Wish extends Basic{ // Making it abstract to avoid error and above classes are overridden so they will also avoid giving an error
         public void NewGreet(){
             System.out.println("How are You?"); // It will give an error because neither the class is abstract nor it override Basic's method
