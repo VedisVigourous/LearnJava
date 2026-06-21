@@ -9,7 +9,7 @@ public class Q01_EncryptionCharacter {
 
         boolean found = false;
 
-        for (int i = 0; i < stringRec.length(); i++) {
+        for (int i = 0; i < stringRec.length()-1; i++) {
             if (stringSent.charAt(i) != stringRec.charAt(i)) {
                 System.out.println(stringSent.charAt(i));
                 found = true;
