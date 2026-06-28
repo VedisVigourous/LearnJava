@@ -3,6 +3,7 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 src/Personal_Practice
+src/AMCAT
 
 ### Eclipse ###
 .apt_generated
@@ -29,3 +30,5 @@ bin/
 ### Mac OS ###
 .DS_Store
 /src/Basic_Java_Practice/
+
+.gitignore
