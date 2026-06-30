@@ -5,6 +5,7 @@ public class Sch_02_BinarySearch {
       Binary Search: It is a very optimized Searching algorithm where the no-of-steps taken to find the element is significantly very less!
       * It takes almost half the steps to search the element as it does not traverse over all the elements!
       * [ Note: The Array provided must be sorted! ]
+        # Start and End are accordingly changed for ascending and descending order!
 
       * Time Complexities:
         * Best Case - O(logN)
@@ -12,7 +13,7 @@ public class Sch_02_BinarySearch {
      */
 
     /*
-     : Pseudocode :
+     : Pseudocode [Ascending order!] :
      BinarySearch(array , target):
         start <- 0
         end <- length(array)-1
@@ -65,3 +66,7 @@ public class Sch_02_BinarySearch {
 
     }
 }
+
+/* Concept of ## Agnostic Binary Search ## : This is when we don't know whether the provided data is in ascending form or descending form!
+   * To check : The best method is to compare the first and last element and then Plan Accordingly!
+ */
