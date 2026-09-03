@@ -2,7 +2,7 @@ package Sorting;
 
 import java.util.Arrays;
 
-public class S03_InsertionSort {
+public class    S03_InsertionSort {
 
         /* Working of The Insertion Sort :
          * It works by sorting parts of the given Array
