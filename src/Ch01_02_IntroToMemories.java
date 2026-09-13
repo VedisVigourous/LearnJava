@@ -33,6 +33,7 @@ public class Ch01_02_IntroToMemories {
         System.out.println("\nSTACK MEMORY:-\n");
         System.out.printf("Original Score: %d%n", originalScore);
         System.out.printf("New Score: %d%n", newScore);
+        System.out.println("Original Score after newScore: " + originalScore);
 
         /* Explanation:
          * The moment we assign originalScore to newScore, Java makes a
