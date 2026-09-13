@@ -1,8 +1,39 @@
 import java.util.Scanner;
 public class Ch03_14_Strings {
+
+    /* String is the most commonly used class of Java!
+       - Every string created is the object of type string!
+
+        AS -> String      name   =    "Str";
+               |           |           |
+           data-type   <referable>   value
+
+
+       Concepts ->
+       1. String Pooling - It is an optimization technique in java where if two strings even on having two different names
+                           -> Will point to the same memory address if the value of both is same!
+
+                           i.e. a = "Vedant" and b = "Vedant"   -> both pointers 'a' and 'b' will point the same address!
+
+
+       2. String Immutability - Strings cannot change the original value assigned instead on updating of the string
+                                - A new object is made with the new value
+
+             - It prevent value change of each variable pointing to a single object on any update!
+
+
+              P1 ---------\
+              P2           ---------------\
+              P3                           ----  "Name"
+              P4 ------------------------/
+
+              - On changing value of, any of the given variable, a new object will be made
+                - Rather than changing the value of all the variables pointing the same object! */
+
+
     public static void main(String[] args) {
         //Strings are sequence of characters
-        //Strings are case sensitive
+        //Strings are case-sensitive
         String name = new String("Vedant");
         System.out.println(name);
 
@@ -39,5 +70,28 @@ public class Ch03_14_Strings {
                                                       //Includes the main number + . + the whole decimal part (3 space)
 
 
+
+
+        /* Comparisons of String ->
+           - On using the '==' comparator
+           - It checks the reference pointer rather than just values
+             - Returns, 'true' if the pointer points to a single object!
+                        'false' otherwise!    */
+
+        String st1 = "Vedant";
+        String st2 = "Vedant";
+        System.out.println("\n\nComparing Variables: " + (st1 == st2));
+
+        /* True because -> String Pool comes into play and both points to the same object */
+
+        // Explicitly creating different objects
+
+        String stob1 = new String("Vedant");
+        String stob2 = new String("Vedant");
+        System.out.println("Comparing explicitly created 2 objects: " + (stob1 == stob2));
+
+        /* Explanation-
+           - Since, the objects are now made outside pool as two different objects
+           - Hence, comparator will now return 'false' */
     }
 }
