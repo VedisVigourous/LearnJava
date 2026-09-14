@@ -93,5 +93,9 @@ public class Ch03_14_Strings {
         /* Explanation-
            - Since, the objects are now made outside pool as two different objects
            - Hence, comparator will now return 'false' */
+
+        /* If only the value is needed to be checked we use the .equals method ->
+           -> It doesn't check the reference but checks only the values of string   */
+        System.out.println("Comparing explicitly created 2 object's value: " + (stob1.equals(stob2)));
     }
 }
