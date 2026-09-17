@@ -67,5 +67,17 @@ public class Ch03_15_StringMethods {
         System.out.println("I am Vedant \t I am learning Java");  //Enters the ESC at same index where written
 
 
+        System.out.println("\nPalindrome Checker Question ->");
+        String st = "abcdcba";
+
+        boolean isPalindrome = true;
+        for(int i = 0 ; i < st.length()/2; i++){
+            if(st.charAt(i) != st.charAt(st.length()-i-1)){
+                isPalindrome = false;
+                break;
+            }
+        }
+
+        System.out.println(isPalindrome ? "Palindrome String" : "Not a Palindrome String");
     }
 }
