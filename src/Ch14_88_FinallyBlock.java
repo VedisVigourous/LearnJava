@@ -88,6 +88,24 @@ public class Ch14_88_FinallyBlock {
         // Notice even after breaking the code , finally block is executed !
 
         // Important note: The finally block will not be executed if program exits(either by calling System.exit() or by causing a fatal error that causes the process to abort)
+
+
+        /* try-with resource - a better alternate
+           -> In java 7 , a new feature was added called try-with-resource which is used to automatically close the resources after the program is executed.
+           -> It allows try to take resources as arguments and automatically closes them after the execution of the program.
+         */
+
+        /* Example of try-with-resource */
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter a number: ");
+            int num = sc.nextInt();
+            System.out.println("You entered: " + num);
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+
+        System.out.println("Try-with-resource exitting...");
+
     }
 }
 
