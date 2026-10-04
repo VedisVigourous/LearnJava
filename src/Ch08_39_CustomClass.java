@@ -40,10 +40,16 @@ public class Ch08_39_CustomClass {
         System.out.println("Below mentioned is Student's Detail:"); // Main Attribute 2
 
         // Any real world object consist of two things - 1. Properties (Specifications) and 2.Behaviour (Work done)
-        //Similarly An object in a class consist of - 1.Attributes (Properties) and 2.Methods (Behaviour)
+        // Similarly An object in a class consist of - 1.Attributes (Properties) and 2.Methods (Behaviour)
+
+        /* new keyword -> It is used to create the object
+         * -> It dynamically allots the memory and also returns a reference to the properties of the class */
 
         // Accessing Class and setting Attributes
         Student Stud1 = new Student();
+    /*  |------------|  |-------------|
+         declaration    object creation */
+
         Stud1.name = "Vedant";
         Stud1.Roll_No = 212096;
         Stud1.fees_due = 0;
