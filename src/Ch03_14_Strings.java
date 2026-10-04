@@ -23,8 +23,8 @@ public class Ch03_14_Strings {
 
 
               P1 ---------\
-              P2           ---------------\
-              P3                           ----  "Name"
+              P2 ------------------------\
+              P3 ---------------------------  "Name"
               P4 ------------------------/
 
               - On changing value of, any of the given variable, a new object will be made
