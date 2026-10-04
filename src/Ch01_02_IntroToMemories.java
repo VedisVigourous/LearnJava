@@ -7,6 +7,7 @@
    2. Heap Memory
       - Reference data types (objects, arrays, classes) are stored in heap memory.
       - Heap memory is used for dynamic allocation.
+      * [dynamic allocation means that the memory is allocated at runtime, and the size of the memory can change during the execution of the program]
       - It is comparatively slower than stack memory but more flexible.
 */
 
