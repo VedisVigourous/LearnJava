@@ -9,6 +9,18 @@
                                       Attributes can be later on allocated by:
                                       variable.attribute = allocation   */
 
+/* A class provides a template for creating objects with different properties and behaviors */
+
+/* ====================================================
+    DIFFERENCE BETWEEN A CLASS AND OTHER COLLECTIONS
+   ====================================================
+
+   -> A class consists of many attributes of different data types whereas other collections,
+   -> Like arrays, consist of only one data type.
+
+   -> Hence, combining different entity in a single structure is called class! */
+
+
 class Student{      //Note: Public is not added because a code can have only one public class
     String name; // Custom Attribute 1
     int Roll_No; // Custom Attribute 2
