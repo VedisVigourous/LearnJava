@@ -5,7 +5,14 @@
 public class Ch12_65_UsingPackages {
     public static void main(String[] args) {
         
-        /* Using Java Packages - 
+        /* ==========================
+            IMPORT statement -> it is used to tell the Java Compiler the exact location where the method resides.
+            -> Once we run the compiler foreign methods are then searched on the location of import and executed!
+
+            Note: Only public methods can be accessed not others!
+            =========================
+            
+         Using Java Packages - 
         
         1. Can be used by - importing packages such as Scanner or Random etc. (Using example of scanner in this case)
            1.1 Now to use Scanner we have three ways -
