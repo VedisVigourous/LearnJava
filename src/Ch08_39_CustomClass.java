@@ -18,7 +18,17 @@
    -> A class consists of many attributes of different data types whereas other collections,
    -> Like arrays, consist of only one data type.
 
-   -> Hence, combining different entity in a single structure is called class! */
+   -> Hence, combining different entity in a single structure is called class!
+
+
+   =====================================================
+    INSTANCE VARIABLE VS STATIC VARIABLE
+   ======================================================
+    - Instance variable denotes the variable belonging to an object of a class
+    - Static variable belongs directly to the class
+
+    - Instance variable differ for different objects and can hold separate values.
+    - Static variable holds the same value throughout the class but may be altered using different objects. */
 
 
 class Student{      //Note: Public is not added because a code can have only one public class
