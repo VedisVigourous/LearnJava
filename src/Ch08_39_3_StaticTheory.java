@@ -1,4 +1,6 @@
 public class Ch08_39_3_StaticTheory {
+    int age = 19;
+
     static void name(String name){
         System.out.print(name);
         greeting();
@@ -6,6 +8,7 @@ public class Ch08_39_3_StaticTheory {
 
     static void greeting(){ // Making it static to avoid error and making the code work!
         System.out.println("! Hello!!");
+        System.out.println(this.age);  // Gives error!
     }
     public static void main(String[] args) {
         Ch08_39_3_StaticTheory.name("Vedant");
@@ -21,4 +24,10 @@ public class Ch08_39_3_StaticTheory {
    =============================================================================================================================
    Static automatically assigns the method to the class and hence it could be accessed without explicitly creating an Instance!
    =============================================================================================================================
+
+   ================================
+    this keyword in static method
+    ===============================
+    -> This represents an object and static actually removing the need of an object doesn't allow 'this' keywords to operate in the method.
+
  */
