@@ -8,7 +8,7 @@ public class Ch08_39_3_StaticTheory {
 
     static void greeting(){ // Making it static to avoid error and making the code work!
         System.out.println("! Hello!!");
-        System.out.println(this.age);  // Gives error!
+        // System.out.println(this.age);  // Gives error!
     }
     public static void main(String[] args) {
         Ch08_39_3_StaticTheory.name("Vedant");
