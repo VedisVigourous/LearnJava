@@ -18,8 +18,9 @@ class NewExtClass extends NewClass{
 
     NewExtClass(int b){
         super(23);
+        /* Super here is initializing the value of a from the base class! That is calling the constructor from class - "NewClass" */
         this.b = b;
-        System.out.println("Value of b is: " + b);
+        System.out.println("Value of a is: " + a + " and b is: " + b);
     }
 
     public int getB() {
@@ -31,6 +32,6 @@ public class Ch10_47_This_and_Super {
         NewExtClass myClass = new NewExtClass(212);
 
         // Using This - it acts as a reference , it gives a particular identity to 'a' (check line 6 for clarity)
-        // Super is already discussed in Earlier program.
+        // Super is used to call the parent class's constructor!
     }
 }
