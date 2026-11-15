@@ -14,8 +14,8 @@ class Base{ // Called Type
     }
 }
 
-// Now since we have already prepared a class for a , we will inherit properties from it to make a class for b.
-// We will not copy paste because then we will have to change each property manually taking a lot of time
+    // Now since we have already prepared a class for 'a', we will inherit properties from it to make a class for 'b'.
+    // We will not copy-paste because then we will have to change each property manually taking a lot of time
 
 class InheritingBase extends Base{ // Called SubType
     int b;
