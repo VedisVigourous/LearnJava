@@ -57,3 +57,35 @@ public class Ch10_45_Inheritance {
         System.out.println(pBase.getB());
     }
 }
+
+
+/* Theory
+
+   -----------------------
+    TYPES OF INHERITANCE
+   -----------------------
+
+   1. Single Inheritance
+      -> One class inherits another class! It is the most common one
+
+   2. Multilevel Inheritance
+      -> A class derives a parent class then becomes a parent for another class!
+
+   3. Multiple Inheritance
+      -> One class extends more than one class!
+
+      { It is not supported in Java!
+        Consider a case, C extends A and B and [ 'a' is declared in both ] if we access it through C
+        Which will be considered!? To overcome this confusion Multiple inheritance is not supported in Java
+        & similar thing is achieved by Interfaced }
+        -----
+        CHECK FILE: Ch11_56_MultipleInheritanceUnsupported.java
+
+   4. Hierarchical Inheritance
+      -> One class is inherited by many other classes! Classes cannot access each others data!
+
+   5. Hybrid Interfaces
+      -> Combination of single and multiple inheritance
+
+      { Since java doesn't have multiple inheritance, Hybrid also lacks in it }
+ */
